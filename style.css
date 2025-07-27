@@ -140,6 +140,22 @@ body{
   .banner-img img{
     width: 100%;
   }
+  .about{
+    margin: 10px;
+    flex-direction: column-reverse;
+    height: 800px;
+    padding-top: 10px;
+    justify-content: start;
+  }
+
+  .about .about-text{
+    width: 100%;
+  }
+  .about .img img{
+    width: 100%;
+    height: 300px;
+    left: 0;
+  }
 }
 
 @media screen and (min-width:481px) and (max-width:767px){
@@ -152,5 +168,22 @@ body{
   .shape2{
     display:none;
     transform: rotate(0deg);
+  }
+
+  .about{
+    margin: 10px;
+    flex-direction: column-reverse;
+    height: 700px;
+    padding-top: 10px;
+    justify-content: start;
+  }
+
+  .about .about-text{
+    width: 100%;
+  }
+  .about .img img{
+    width: 100%;
+    height: 300px;
+    left: 0;
   }
 }
