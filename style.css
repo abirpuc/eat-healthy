@@ -12,10 +12,10 @@ body{
 
 .common-btn{
   padding: 15px 20px;
-  border-radius: 12px;
+  border-radius: 30px;
   border: none;
   color: #fff;
-  background: orangered;
+  background: linear-gradient(90deg, orange, orangered);
   font-size: 20px;
   cursor: pointer;
   transition: all 0.3s;
@@ -23,7 +23,7 @@ body{
 }
 
 .common-btn:hover{
-  background: orange;
+ background: linear-gradient(90deg, orangered, orange);
 }
 
 .banner-container{
@@ -140,6 +140,7 @@ body{
 .recipies-top h1{
   color: gray;
   margin: 20px 0;
+  font-size: 40px;
   letter-spacing: 1px;
   line-height: 1.7;
 }
@@ -210,13 +211,17 @@ footer{
   height: 260px;
   text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer h3{
   color: gray;
   font-size: 25px;
   font-weight: 700;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 
 footer h3 span{
