@@ -6,8 +6,8 @@
 
 body{
     font-family:'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #fff;
-    padding: 40px;
+    background: hsl(0, 0%, 100%);
+    /* padding: 40px; */
 }
 
 .common-btn{
@@ -100,6 +100,7 @@ body{
   margin: 20px;
   border-radius: 10px;
   position: relative;
+  box-shadow: 0 10px 20px rgba(114, 69, 91, 0.911)
 }
 
 .about h1{
@@ -124,6 +125,106 @@ body{
 
 .about .about-text{
   width: 40%;
+}
+
+.recipies-container{
+  margin: 40px;
+}
+
+.recipies-top{
+  width: 50%;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.recipies-top h1{
+  color: gray;
+  margin: 20px 0;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+
+.recipies-top p{
+  line-height: 1.7;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cards .card{
+  width: 610px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.cards .card .card-img img{
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.card h1{
+  color: gray;
+  padding: 20px 0;
+}
+
+.card p{
+  padding-bottom: 20px;
+}
+
+.counting{
+  margin: 40px auto;
+  padding: 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.counting .youtube{
+  text-align: center;
+}
+
+.counting .youtube h1{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1.7px;
+  padding-bottom: 6px;
+}
+
+.counting .youtube p{
+  font-size: 19px;
+  font-weight: 300;
+  color: gray;
+}
+
+footer{
+  background: black;
+  width: 100%;
+  height: 260px;
+  text-align: center;
+  color: white;
+}
+
+footer h3{
+  color: gray;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 30px;
+}
+
+footer h3 span{
+  color: orange;
+}
+
+footer p{
+  color: #eeeded;
 }
 
 @media screen and (max-width:480px) {
@@ -155,6 +256,20 @@ body{
     width: 100%;
     height: 300px;
     left: 0;
+  }
+  .recipies-top{
+    width: 100%;
+  }
+  .cards{
+    flex-direction: column;
+    margin: 20px;
+  }
+  .card{
+    width: 300px;
+  }
+
+  .card .card-img img{
+    width: 300px;
   }
 }
 
